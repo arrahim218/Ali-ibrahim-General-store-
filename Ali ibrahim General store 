@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>علی ابراہیم جنرل سٹور</title>
+  <meta name="description" content="Ali Ibrahim General Store - groceries, household items, daily essentials, utility services, and online ordering in Weng, Rajanpur." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b'
+            }
+          },
+          boxShadow: {
+            soft: '0 18px 40px rgba(15, 23, 42, 0.10)',
+            card: '0 12px 28px rgba(16, 185, 129, 0.12)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Nastaliq Urdu', serif;
+      background: #f8fafc;
+    }
+    .english {
+      font-family: 'Inter', sans-serif;
+    }
+    .section-title {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .section-title::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -10px;
+      width: 70%;
+      height: 3px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #10b981, #34d399);
+    }
+    .hover-lift:hover {
+      transform: translateY(-6px);
+      transition: 0.25s ease;
+    }
+    .hero-bg {
+      background:
+        linear-gradient(rgba(6, 78, 59, 0.78), rgba(6, 78, 59, 0.78)),
+        url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    }
+  </style>
+</head>
+<body class="text-slate-800 antialiased">
+
+  <header class="sticky top-0 z-50 bg-primary-800 text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-xl">🏪</div>
+          <div class="leading-tight">
+            <h1 class="text-lg sm:text-2xl font-bold">علی ابراہیم جنرل سٹور</h1>
+          </div>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-7 text-sm lg:text-base">
+          <a href="#home" class="hover:text-emerald-100 transition">ہوم</a>
+          <a href="#about" class="hover:text-emerald-100 transition">ہم بارے میں</a>
+          <a href="#products" class="hover:text-emerald-100 transition">مصنوعات</a>
+          <a href="#pricing" class="hover:text-emerald-100 transition">ریٹ لسٹ</a>
+          <a href="#contact" class="hover:text-emerald-100 transition">رابطہ</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/923367787900?text=السلام%20علیکم!%20مجھے%20علی%20ابراہیم%20جنرل%20سٹور%20سے%20سامان%20آرڈر%20کرنا%20ہے۔" target="_blank"
+             class="hidden sm:inline-flex bg-white text-primary-800 px-4 py-2 rounded-full text-sm font-bold hover:bg-emerald-50 transition">
+            0336-7787900
+          </a>
+          <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col gap-2 text-sm">
+          <a href="#home" class="py-2">ہوم</a>
+          <a href="#about" class="py-2">ہم بارے میں</a>
+          <a href="#products" class="py-2">مصنوعات</a>
+          <a href="#pricing" class="py-2">ریٹ لسٹ</a>
+          <a href="#contact" class="py-2">رابطہ</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <section class="hero-bg text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <span class="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm">
+              بہتر قیمت • معیاری سامان • فوری خدمات
+            </span>
+            <h2 class="mt-6 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+              آپ کی روزمرہ کی ضروریات کا بہترین مقام
+            </h2>
+            <p class="mt-5 text-base sm:text-lg text-emerald-50 leading-8">
+              بخاری روڈ، ونگ، راجن پور میں آپ کو گھر کے ہر روز کے ضروری سامان، خوراک، صفائی، اور خدمات ایک ہی دکان میں ملیں گی۔
+            </p>
+
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#products" class="bg-amber-400 text-slate-900 px-6 py-3 rounded-full font-bold shadow-lg hover:bg-amber-300 transition">
+                مصنوعات دیکھیں
+              </a>
+              <a href="https://wa.me/923367787900?text=السلام%20علیکم!%20مجھے%20علی%20ابراہیم%20جنرل%20سٹور%20سے%20سامان%20آرڈر%20کرنا%20ہے۔" target="_blank"
+                 class="bg-green-500 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-green-400 transition">
+                واٹس ایپ آرڈر
+              </a>
+            </div>
+
+            <div class="mt-9 flex flex-wrap gap-8 text-sm text-emerald-50">
+              <div>
+                <div class="text-2xl font-extrabold">24/7</div>
+                <div>آرڈر سہولت</div>
+              </div>
+              <div>
+                <div class="text-2xl font-extrabold">100%</div>
+                <div>معیاری سامان</div>
+              </div>
+              <div>
+                <div class="text-2xl font-extrabold">مطمئن</div>
+                <div>خریدار</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur-sm p-4 sm:p-6 rounded-3xl border border-white/20 shadow-soft">
+            <div class="bg-white rounded-[1.75rem] overflow-hidden shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80" alt="store" class="h-72 sm:h-96 w-full object-cover" />
+              <div class="p-5">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <p class="english text-xs uppercase tracking-[0.2em] text-slate-400">Store Location</p>
+                    <h3 class="mt-2 text-xl font-bold text-slate-800">بخاری روڈ، ونگ</h3>
+                  </div>
+                  <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold">OPEN</span>
+                </div>
+                <p class="mt-4 text-sm text-slate-600">آپ کے گھر، دکان اور روزمرہ زندگی کی ضروریات کے لیے بہترین مصنوعات۔</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-16 sm:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h3 class="section-title text-3xl font-extrabold text-slate-800">ہماری دکان کے بارے میں</h3>
+        </div>
+
+        <div class="mt-12 grid lg:grid-cols-2 gap-10 items-center">
+          <div class="order-2 lg:order-1">
+            <p class="text-lg leading-9 text-slate-700">
+              علی ابراہیم جنرل سٹور آپ کے گھر اور روزمرہ زندگی کے لیے ضروری اشیاء، خوراک، کاسمیٹکس، صفائی کے سامان اور یوٹیلیٹی خدمات فراہم کرتا ہے۔ ہم بہت ہی معقول قیمت، سستی قیمت اور دوستانہ سروس کے ساتھ آپ کی ضروریات پوری کرتے ہیں۔
+            </p>
+
+            <div class="mt-8 grid sm:grid-cols-2 gap-5">
+              <div class="bg-white rounded-2xl p-5 shadow-soft border border-slate-100">
+                <div class="text-3xl mb-3">✅</div>
+                <h4 class="font-bold text-lg text-slate-800">معیاری سامان</h4>
+                <p class="mt-2 text-slate-600">بے حد قابل بھروسہ اور سستا سامان</p>
+              </div>
+
+              <div class="bg-white rounded-2xl p-5 shadow-soft border border-slate-100">
+                <div class="text-3xl mb-3">💰</div>
+                <h4 class="font-bold text-lg text-slate-800">قیمتیں سستی</h4>
+                <p class="mt-2 text-slate-600">کم قیمت کے ساتھ بہترین معیار</p>
+              </div>
+
+              <div class="bg-white rounded-2xl p-5 shadow-soft border border-slate-100">
+                <div class="text-3xl mb-3">📍</div>
+                <h4 class="font-bold text-lg text-slate-800">آسان مقام</h4>
+                <p class="mt-2 text-slate-600">بخاری روڈ، ونگ، راجن پور</p>
+              </div>
+
+              <div class="bg-white rounded-2xl p-5 shadow-soft border border-slate-100">
+                <div class="text-3xl mb-3">📞</div>
+                <h4 class="font-bold text-lg text-slate-800">فوری رابطہ</h4>
+                <p class="mt-2 text-slate-600">فون اور واٹس ایپ پر فوری جواب</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <div class="rounded-[2rem] overflow-hidden shadow-soft border border-slate-100">
+              <img src="https://images.unsplash.com/photo-1528747045269-390fe33c19f2?auto=format&fit=crop&w=1200&q=80" alt="store interior" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="bg-slate-100 py-16 sm:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h3 class="section-title text-3xl font-extrabold text-slate-800">ہماری اہم مصنوعات</h3>
+        </div>
+
+        <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white rounded-3xl overflow-hidden shadow-soft border border-slate-100 hover-lift">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80" alt="Groceries" class="h-52 w-full object-cover" />
+            <div class="p-5">
+              <h4 class="font-bold text-xl text-slate-800">کریانہ</h4>
+              <p class="mt-3 text-slate-600">دالیں، چاول، گھی، مصالحہ جات اور روزمرہ ضروریات</p>
+              <div class="mt-4 flex justify-between items-center">
+                <span class="font-bold text-primary-700">Rs. 320</span>
+                <button class="add-to-cart bg-primary-600 text-white px-3 py-2 rounded-full text-sm font-bold hover:bg-primary-500 transition"
+                        data-name="سپر باسپتی چاول" data-price="320">
+                  شامل کریں
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl overflow-hidden shadow-soft border border-slate-100 hover-lift">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80" alt="Household" class="h-52 w-full object-cover" />
+            <div class="p-5">
+              <h4 class="font-bold text-xl text-slate-800">گھریلو سامان</h4>
+              <p class="mt-3 text-slate-600">ہاؤس ہولڈ، صفائی، بچوں کے ضروریات اور گھریلو اشیاء</p>
+              <div class="mt-4 flex justify-between items-center">
+                <span class="font-bold text-primary-700">Rs. 250</span>
+                <button class="add-to-cart bg-primary-600 text-white px-3 py-2 rounded-full text-sm font-bold hover:bg-primary-500 transition"
+                        data-name="گھریلو سٹور پیک" data-price="250">
+                  شامل کریں
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl overflow-hidden shadow-soft border border-slate-100 hover-lift">
+            <img src="https://images.unsplash.com/photo-1528747045269-390fe33c19f2?auto=format&fit=crop&w=900&q=80" alt="Cosmetics" class="h-52 w-full object-cover" />
+            <div class="p-5">
+              <h4 class="font-bold text-xl text-slate-800">کاسمیٹکس</h4>
+              <p class="mt-3 text-slate-600">سوپ، شیمپو، ساؤنڈ، اور روزمرہ دیکھ بھال کے سامان</p>
+              <div class="mt-4 flex justify-between items-center">
+                <span class="font-bold text-primary-700">Rs. 185</span>
+                <button class="add-to-cart bg-primary-600 text-white px-3 py-2 rounded-full text-sm font-bold hover:bg-primary-500 transition"
+                        data-name="کاسمیٹک پیک" data-price="185">
+                  شامل کریں
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl overflow-hidden shadow-soft border border-slate-100 hover-lift">
+            <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80" alt="Services" class="h-52 w-full object-cover" />
+            <div class="p-5">
+              <h4 class="font-bold text-xl text-slate-800">یوٹیلیٹی خدمات</h4>
+              <p class="mt-3 text-slate-600">موبائل لوڈ، انٹرنیٹ، بلز، اور روزمرہ ادائیگی خدمات</p>
+              <div class="mt-4 flex justify-between items-center">
+                <span class="font-bold text-primary-700">Rs. 500</span>
+                <button class="add-to-cart bg-primary-600 text-white px-3 py-2 rounded-full text-sm font-bold hover:bg-primary-500 transition"
+                        data-name="یوٹیلیٹی پیک" data-price="500">
+                  شامل کریں
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl overflow-hidden shadow-soft border border-slate-100 hover-lift">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80" alt="Rice" class="h-52 w-full object-cover" />
+            <div class="p-5">
+              <h4 class="font-bold text-xl text-slate-800">چاول</h4>
+              <p class="mt-3 text-slate-600">بہت اچھی کوالٹی کا فیبریک چاول، روزمرہ استعمال کے لیے</p>
+              <div class="mt-4 flex justify-between items-center">
+                <span class="font-bold text-primary-700">Rs. 420</span>
+                <button class="add-to-cart bg-primary-600 text-white px-3 py-2 rounded-full text-sm font-bold hover:bg-primary-500 transition"
+                        data-name="چاول باکس" data-price="420">
+                  شامل کریں
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl overflow-hidden shadow-soft border border-slate-100 hover-lift">
+            <img src="https://images.unsplash.com/photo-1518843875459-f738682238a6?auto=format&fit=crop&w=900&q=80" alt="Soap" class="h-52 w-full object-cover" />
+            <div class="p-5">
+              <h4 class="font-bold text-xl text-slate-800">صافیاں</h4>
+              <p class="mt-3 text-slate-600">سوابن، ڈٹرجنٹ، کچن کی صفائی، اور گھریلو استعمال کی چیزیں</p>
+              <div class="mt-4 flex justify-between items-center">
+                <span class="font-bold text-primary-700">Rs. 140</span>
+                <button class="add-to-cart bg-primary-600 text-white px-3 py-2 rounded-full text-sm font-bold hover:bg-primary-500 transition"
+                        data-name="صافیاں پیک" data-price="140">
+                  شامل کریں
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl overflow-hidden shadow-soft border border-slate-100 hover-lift">
+            <img src="https://images.unsplash.com/photo-1592878904946-b7cd5df5f40a?auto=format&fit=crop&w=900&q=80" alt="Spices" class="h-52 w-full object-cover" />
+            <div class="p-5">
+              <h4 class="font-bold text-xl text-slate-800">مصالحہ جات</h4>
+              <p class="mt-3 text-slate-600">لال مرچ، لہسن، زعفران، ملیا اور مختلف مصالحہ جات</p>
+              <div class="mt-4 flex justify-between items-center">
+                <span class="font-bold text-primary-700">Rs. 220</span>
+                <button class="add-to-cart bg-primary-600 text-white px-3 py-2 rounded-full text-sm font-bold hover:bg-primary-500 transition"
+                        data-name="مصالحہ جُک" data-price="220">
+                  شامل کریں
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl overflow-hidden shadow-soft border border-slate-100 hover-lift">
+            <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=80" alt="Food package" class="h-52 w-full object-cover" />
+            <div class="p-5">
+              <h4 class="font-bold text-xl text-slate-800">خوراکی پیک</h4>
+              <p class="mt-3 text-slate-600">حقیقی خوراکی necessities اور گھر کے لیے روزمرہ استعمال کا پیک</p>
+              <div class="mt-4 flex justify-between items-center">
+                <span class="font-bold text-primary-700">Rs. 690</span>
+                <button class="add-to-cart bg-primary-600 text-white px-3 py-2 rounded-full text-sm font-bold hover:bg-primary-500 transition"
+                        data-name="خوراکی پیک" data-price="690">
+                  شامل کریں
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="py-16 sm:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h3 class="section-title text-3xl font-extrabold text-slate-800">تازہ ریٹ لسٹ</h3>
+        </div>
+
+        <div class="mt-10 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-soft">
+          <div class="overflow-x-auto">
+            <table class="min-w-full text-right">
+              <thead class="bg-primary-800 text-white">
+                <tr>
+                  <th class="px-6 py-4 font-bold">شمار</th>
+                  <th class="px-6 py-4 font-bold">سامان</th>
+                  <th class="px-6 py-4 font-bold">مقدار</th>
+                  <th class="px-6 py-4 font-bold">قیمت</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200">
+                <tr class="hover:bg-slate-50">
+                  <td class="px-6 py-4 font-semibold text-slate-500">1</td>
+                  <td class="px-6 py-4 font-semibold text-slate-800">سپر باسپتی چاول</td>
+                  <td class="px-6 py-4 text-slate-700">1 کلو</td>
+                  <td class="px-6 py-4 font-bold text-primary-700">Rs. 320</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="px-6 py-4 font-semibold text-slate-500">2</td>
+                  <td class="px-6 py-4 font-semibold text-slate-800">دال چنا</td>
+                  <td class="px-6 py-4 text-slate-700">1 کلو</td>
+                  <td class="px-6 py-4 font-bold text-primary-700">Rs. 260</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="px-6 py-4 font-semibold text-slate-500">3</td>
+                  <td class="px-6 py-4 font-semibold text-slate-800">دال مونگ</td>
+                  <td class="px-6 py-4 text-slate-700">1 کلو</td>
+                  <td class="px-6 py-4 font-bold text-primary-700">Rs. 280</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="px-6 py-4 font-semibold text-slate-500">4</td>
+                  <td class="px-6 py-4 font-semibold text-slate-800">چینی</td>
+                  <td class="px-6 py-4 text-slate-700">1 کلو</td>
+                  <td class="px-6 py-4 font-bold text-primary-700">Rs. 145</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="px-6 py-4 font-semibold text-slate-500">5</td>
+                  <td class="px-6 py-4 font-semibold text-slate-800">کوکنگ آئل</td>
+                  <td class="px-6 py-4 text-slate-700">1 لیٹر</td>
+                  <td class="px-6 py-4 font-bold text-primary-700">Rs. 500</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                  <td class="px-6 py-4 font-semibold text-slate-500">6</td>
+                  <td class="px-6 py-4 font-semibold text-slate-800">سافٹ ڈرنگ</td>
+                  <td class="px-6 py-4 text-slate-700">1 پیکٹ</td>
+                  <td class="px-6 py-4 font-bold text-primary-700">Rs. 180</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p class="mt-4 text-center text-sm text-slate-500">
+          * قیمتیں مارکیٹ کی تبدیلی کے مطابق بدل سکتی ہیں۔
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-primary-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white/5 p-6 rounded-3xl border border-white/10">
+            <div class="text-4xl mb-4">🏆</div>
+            <h4 class="text-xl font-bold">اعتماد</h4>
+            <p class="mt-3 text-emerald-50 leading-7">آپ کے گھر کے لیے بہترین اور معیاری سامان، زندگی کے تقریباً ہر دن کے لیے۔</p>
+          </div>
+
+          <div class="bg-white/5 p-6 rounded-3xl border border-white/10">
+            <div class="text-4xl mb-4">🚚</div>
+            <h4 class="text-xl font-bold">سہولت</h4>
+            <p class="mt-3 text-emerald-50 leading-7">آپ گھر بیٹھے اپنی ضرورت کی چیز کے لیے بغیر مسئلے کے رابطہ کر سکتے ہیں۔</p>
+          </div>
+
+          <div class="bg-white/5 p-6 rounded-3xl border border-white/10">
+            <div class="text-4xl mb-4">📱</div>
+            <h4 class="text-xl font-bold">واٹس ایپ آرڈر</h4>
+            <p class="mt-3 text-emerald-50 leading-7">صرف ایک میسج سے فوری آرڈر، فوری جواب اور آسان خریداری۔</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 sm:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <h3 class="section-title text-3xl font-extrabold text-slate-800">ہم سے رابطہ کریں</h3>
+            <p class="mt-6 text-lg leading-9 text-slate-700">
+              اگر آپ کو کسی بھی قسم کا سامان، غذائی اشیاء، گھریلو سامان یا یوٹیلیٹی خدمت درکار ہے تو ہمیں بلا جھجھک رابطہ کریں۔
+            </p>
+
+            <div class="mt-8 space-y-5">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-2xl">📍</div>
+                <div>
+                  <p class="font-bold text-slate-800">پتہ</p>
+                  <p class="text-slate-600">بخاری روڈ، ونگ، قرب آرائیں پٹرولیم سروس، راجن پور</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-2xl">📞</div>
+                <div>
+                  <p class="font-bold text-slate-800">فون</p>
+                  <a href="tel:+923367787900" class="text-slate-600 hover:text-emerald-700 transition">0336-7787900</a><br>
+                  <a href="tel:+92343331571" class="text-slate-600 hover:text-emerald-700 transition">0334-3331571</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-2xl">⏰</div>
+                <div>
+                  <p class="font-bold text-slate-800">کھلنے کے اوقات</p>
+                  <p class="text-slate-600">صبح 7:00 سے رات 10:00 تک</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-[2rem] shadow-soft border border-slate-100 p-6">
+            <h4 class="text-2xl font-bold text-slate-800">واٹس ایپ پر فوری آرڈر</h4>
+
+            <div class="mt-6 space-y-4">
+              <a href="https://wa.me/923367787900?text=السلام%20علیکم!%20مجھے%20علی%20ابراہیم%20جنرل%20سٹور%20سے%20سامان%20آرڈر%20کرنا%20ہے۔" target="_blank"
+                 class="flex items-center justify-between bg-green-500 text-white px-5 py-4 rounded-2xl shadow hover:bg-green-400 transition">
+                <span class="font-bold">0336-7787900</span>
+                <span class="text-xl">💬</span>
+              </a>
+
+              <a href="https://wa.me/92343331571?text=السلام%20علیکم!%20مجھے%20علی%20ابراہیم%20جنرل%20سٹور%20سے%20سامان%20آرڈر%20کرنا%20ہے۔" target="_blank"
+                 class="flex items-center justify-between bg-emerald-600 text-white px-5 py-4 rounded-2xl shadow hover:bg-emerald-500 transition">
+                <span class="font-bold">0334-3331571</span>
+                <span class="text-xl">💬</span>
+              </a>
+            </div>
+
+            <div class="mt-8 border-t pt-5">
+              <p class="text-sm text-slate-500">فوری سوال یا آرڈر کے لیے واٹس ایپ پر رابطہ کریں۔</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="bg-white rounded-[2rem] shadow-soft border border-slate-100 p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-2xl font-bold text-slate-800">ٹوکری</h3>
+          <span id="cartCountBadge" class="bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-bold">0</span>
+        </div>
+
+        <div id="cartItems" class="space-y-3">
+          <p class="text-slate-500">ابھی تک کوئی سامان شامل نہیں ہوا۔</p>
+        </div>
+
+        <div class="mt-6 border-t pt-4">
+          <div class="flex justify-between items-center text-lg font-bold text-slate-800">
+            <span>کل رقم</span>
+            <span id="cartTotal">Rs. 0</span>
+          </div>
+        </div>
+
+        <button id="checkoutBtn" class="mt-5 w-full bg-green-500 text-white py-3 rounded-full font-bold hover:bg-green-400 transition">
+          واٹس ایپ پر آرڈر بھیجیں
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-900 text-slate-200 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p class="text-sm">© 2026 علی ابراہیم جنرل سٹور. تمام حقوق محفوظ ہیں۔</p>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="#home" class="hover:text-white">ہوم</a>
+        <a href="#products" class="hover:text-white">مصنوعات</a>
+        <a href="#contact" class="hover:text-white">رابطہ</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/923367787900?text=السلام%20علیکم!%20مجھے%20علی%20ابراہیم%20جنرل%20سٹور%20سے%20سامان%20آرڈر%20کرنا%20ہے۔" target="_blank"
+     class="fixed bottom-5 left-5 bg-green-500 hover:bg-green-400 text-white rounded-full shadow-2xl w-16 h-16 flex items-center justify-center text-3xl z-50">
+    💬
+  </a>
+
+  <script>
+    const cart = [];
+    const cartItems = document.getElementById('cartItems');
+    const cartTotal = document.getElementById('cartTotal');
+    const cartCountBadge = document.getElementById('cartCountBadge');
+
+    function renderCart() {
+      if (cart.length === 0) {
+        cartItems.innerHTML = '<p class="text-slate-500">ابھی تک کوئی سامان شامل نہیں ہوا۔</p>';
+        cartTotal.textContent = 'Rs. 0';
+        cartCountBadge.textContent = '0';
+        return;
+      }
+
+      let total = 0;
+      let html = '';
+
+      cart.forEach((item) => {
+        total += item.price;
+        html += `
+          <div class="flex items-center justify-between bg-slate-50 rounded-2xl p-3 border border-slate-100">
+            <div>
+              <h4 class="font-bold text-slate-800">${item.name}</h4>
+              <p class="text-sm text-slate-500">Rs. ${item.price}</p>
+            </div>
+            <button class="remove-item text-red-500 font-bold" data-name="${item.name}">حذف</button>
+          </div>
+        `;
+      });
+
+      cartItems.innerHTML = html;
+      cartTotal.textContent = 'Rs. ' + total;
+      cartCountBadge.textContent = cart.length;
+    }
+
+    document.querySelectorAll('.add-to-cart').forEach((button) => {
+      button.addEventListener('click', () => {
+        const name = button.dataset.name;
+        const price = Number(button.dataset.price);
+
+        cart.push({ name, price });
+        renderCart();
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (event.target.classList.contains('remove-item')) {
+        const name = event.target.dataset.name;
+        const index = cart.findIndex((item) => item.name === name);
+        if (index > -1) cart.splice(index, 1);
+        renderCart();
+      }
+    });
+
+    document.getElementById('checkoutBtn').addEventListener('click', () => {
+      if (cart.length === 0) {
+        alert('براہ کرم پہلے کوئی سامان شامل کریں۔');
+        return;
+      }
+
+      let message = 'السلام علیکم! میں علی ابراہیم جنرل سٹور سے درج ذیل چیزیں آرڈر کرنا چاہتا/چاہتی ہوں:%0A%0A';
+      let total = 0;
+
+      cart.forEach((item, index) => {
+        message += `${index + 1}. ${item.name} - Rs. ${item.price}%0A`;
+        total += item.price;
+      });
+
+      message += `%0Aکل رقم: Rs. ${total}%0A%0Aبراہ کرم مجھے مکمل ڈیلیوری کی معلومات دے دیں۔`;
+
+      const phone = '923367787900';
+      window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+    });
+
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
